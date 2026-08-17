@@ -1,0 +1,9 @@
+services:
+  repost-bot:
+    build: .
+    container_name: telegram_repost_bot
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
